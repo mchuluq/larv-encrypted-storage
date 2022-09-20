@@ -1,0 +1,33 @@
+{
+    "name": "mchuluq/lartv-encrypted-storage",
+    "description": "Encrypted Local Storage for laravel 8.x",
+    "keywords": ["laravel", "framework", "files", "encrypted", "flysystem", "mchuluq"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mochammad C. Chuluq",
+            "email": "mchuluq@gmail.com",
+            "homepage": "https://github.com/mchuluq"
+        }
+    ],
+    "require": {
+        "php":  "^7.4.15 || ^8.0.2",
+        "illuminate/contracts": "^8.75",
+        "illuminate/support": "^8.75",
+        "league/flysystem": "^1.1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "mchuluq\\Larv\\EncryptedStorage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mchuluq\\Larv\\EncryptedStorage\\EncryptedStorageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
